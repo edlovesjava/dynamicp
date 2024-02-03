@@ -11,7 +11,7 @@ def count_paths_memo(width, height, memo):
     # compute hash of width, height order independent
     memo_hash = (width, height) if width < height else (height, width)
     if (width, height) in memo:
-        print(f' >> memo hit on {memo_hash}: {memo[memo_hash]}')
+        # print(f' >> memo hit on {memo_hash}: {memo[memo_hash]}')
         # track hits per memoization
         memo[memo_hash]['hits'] = memo[memo_hash]['hits'] + 1
         return memo[memo_hash]['count']
