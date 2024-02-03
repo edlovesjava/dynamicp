@@ -25,6 +25,7 @@ def count_paths_memo(width, height, memo):
     memo[memo_hash] = {'count': paths_count, 'hits': 0}
     return paths_count
 
+
 # count paths in grid of various sizes using dynamic programming technique of
 # breaking down the problem into smaller sub-problems
 def count_paths(width, height):
@@ -59,4 +60,3 @@ if __name__ == '__main__':
     # show memoization hits per sub-problem
     for key in memo:
         print(f' >> memo[{key}] = {memo[key]}')
-
